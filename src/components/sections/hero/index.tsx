@@ -16,7 +16,8 @@ export function HeroSection() {
         min-h-screen
         items-center
         overflow-hidden
-        pt-32
+        pt-32 
+        scroll-mt-32
       "
     >
       <div

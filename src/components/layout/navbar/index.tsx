@@ -1,22 +1,37 @@
+"use client";
+
 import Link from "next/link";
 
-import { Container } from "@/components/shared/container";
+import { cn } from "@/lib/utils/cn";
 
-import { MobileMenu } from "./mobile-menu";
+import { useActiveSection } from "@/hooks/use-active-section";
 
-const navigation = [
+const navigationItems = [
   {
     label: "Sobre",
     href: "#about",
   },
+
   {
     label: "Resultados",
     href: "#results",
   },
+
   {
     label: "Método",
     href: "#method",
   },
+
+  {
+    label: "Depoimentos",
+    href: "#testimonials",
+  },
+
+  {
+    label: "FAQ",
+    href: "#faq",
+  },
+
   {
     label: "Contato",
     href: "#contact",
@@ -24,85 +39,128 @@ const navigation = [
 ];
 
 export function Navbar() {
+  const activeSection = useActiveSection();
+
   return (
     <header
       className="
         fixed
         top-0
+        left-0
+        right-0
         z-50
-        w-full
+
         border-b
-        border-white/5
-        bg-black/40
+        border-white/10
+
+        bg-black/60
         backdrop-blur-xl
       "
     >
-      <Container>
-        <div
+      <div
+        className="
+          mx-auto
+          flex
+          h-20
+          max-w-7xl
+          items-center
+          justify-between
+          px-6
+        "
+      >
+        {/* LOGO */}
+
+        <Link
+          href="/"
           className="
-            flex
-            h-20
-            items-center
-            justify-between
+            text-xl
+            font-black
+            tracking-tight
           "
         >
-          <Link
-            href="/"
-            className="
-              text-xl
-              font-black
-              tracking-tight
-            "
-          >
-            THIAGO
-            <span className="text-[#72F5C8]">RIBEIRO</span>
-          </Link>
+          THIAGO
+          <span className="text-[#72F5C8]">RIBEIRO</span>
+        </Link>
 
-          <nav
-            className="
-              hidden
-              items-center
-              gap-10
-              md:flex
-            "
-          >
-            {navigation.map((item) => (
+        {/* NAVIGATION */}
+
+        <nav
+          className="
+            hidden
+            items-center
+            gap-8
+            md:flex
+          "
+        >
+          {navigationItems.map((item) => {
+            const sectionId = item.href.replace("#", "");
+
+            const isActive = activeSection === sectionId;
+
+            return (
               <Link
                 key={item.href}
                 href={item.href}
-                className="
-                  text-sm
-                  text-zinc-300
-                  transition-colors
-                  hover:text-white
-                "
+                className={cn(
+                  `
+                    relative
+                    text-sm
+                    font-medium
+                    transition-colors
+                  `,
+
+                  isActive
+                    ? "text-[#72F5C8]"
+                    : "text-zinc-400 hover:text-white",
+                )}
               >
                 {item.label}
+
+                {isActive && (
+                  <span
+                    className="
+                      absolute
+                      -bottom-2
+                      left-0
+
+                      h-[2px]
+                      w-full
+
+                      bg-[#72F5C8]
+                    "
+                  />
+                )}
               </Link>
-            ))}
-          </nav>
+            );
+          })}
+        </nav>
 
-          <div className="hidden md:block">
-            <button
-              className="
-                rounded-full
-                bg-[#72F5C8]
-                px-6
-                py-3
-                text-sm
-                font-semibold
-                text-black
-                transition-transform
-                hover:scale-105
-              "
-            >
-              COMEÇAR AGORA
-            </button>
-          </div>
+        {/* CTA */}
 
-          <MobileMenu />
-        </div>
-      </Container>
+        <a
+          href="https://wa.me/5581996051733?text=Olá%20Thiago,%20gostaria%20de%20saber%20mais%20sobre%20a%20consultoria."
+          target="_blank"
+          rel="noreferrer"
+          className="
+            hidden
+            rounded-full
+            bg-[#72F5C8]
+            px-5
+            py-3
+
+            text-sm
+            font-semibold
+            text-black
+
+            transition-transform
+            hover:scale-105
+
+            md:inline-flex
+          "
+        >
+          Consultoria
+        </a>
+      </div>
     </header>
   );
 }

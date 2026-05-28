@@ -8,7 +8,7 @@ import { aboutItems } from "./about-data";
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-32">
+    <section id="about" className="py-32 scroll-mt-32">
       <Container>
         <SectionHeader
           eyebrow="Sobre"
