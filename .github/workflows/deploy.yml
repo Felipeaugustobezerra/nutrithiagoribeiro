@@ -1,4 +1,4 @@
-name: Deploy Hostinger
+name: Deploy Hostinger teste
 
 on:
   push:
