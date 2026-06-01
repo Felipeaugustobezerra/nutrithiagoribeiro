@@ -2,11 +2,11 @@ import { FadeIn } from "@/components/shared/fade-in";
 
 const stats = [
   {
-    value: "+500",
+    value: "+100",
     label: "Alunos transformados",
   },
   {
-    value: "+8",
+    value: "+4",
     label: "Anos de experiência",
   },
   {
