@@ -44,5 +44,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./out/
-          server-dir: ./public_html/
+          server-dir: /public_html/ # Ajuste para onde quer fazer o deploy
           dangerous-clean-slate: false
