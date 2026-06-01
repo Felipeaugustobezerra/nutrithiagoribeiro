@@ -6,7 +6,7 @@ const stats = [
     label: "Alunos transformados",
   },
   {
-    value: "+4",
+    value: "+5",
     label: "Anos de experiência",
   },
   {
