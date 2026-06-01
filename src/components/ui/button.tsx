@@ -26,6 +26,9 @@ export function Button({
           font-semibold
           transition-all
           duration-300
+          cursor-pointer
+          disabled:cursor-not-allowed
+          disabled:opacity-50
         `,
 
         variant === "primary" &&

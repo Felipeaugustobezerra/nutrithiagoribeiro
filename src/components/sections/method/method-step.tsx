@@ -23,7 +23,7 @@ export function MethodStep({ number, title, description }: MethodStepProps) {
         className="
           text-6xl
           font-black
-          text-[#72F5C8]/20
+          text-[#72F5C8]/40
         "
       >
         {number}
@@ -45,7 +45,7 @@ export function MethodStep({ number, title, description }: MethodStepProps) {
           className="
             mt-4
             leading-relaxed
-            text-zinc-400
+            text-zinc-300
           "
         >
           {description}

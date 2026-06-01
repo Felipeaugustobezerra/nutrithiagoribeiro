@@ -15,7 +15,7 @@ export function HeroBadge() {
           bg-[#72F5C8]/10
           px-5
           py-2
-          text-sm
+          text-lg
           text-[#72F5C8]
         "
       >

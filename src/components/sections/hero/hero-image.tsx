@@ -34,7 +34,7 @@ export function HeroImage() {
           "
         >
           <Image
-            src="/thiago.png"
+            src="/image2.png"
             alt="Thiago Ribeiro"
             width={700}
             height={900}

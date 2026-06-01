@@ -59,6 +59,7 @@ export function TestimonialsSection() {
             name={testimonials[activeIndex].name}
             role={testimonials[activeIndex].role}
             content={testimonials[activeIndex].content}
+            image={testimonials[activeIndex].image}
           />
 
           {/* CONTROLS */}

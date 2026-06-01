@@ -1,11 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 import { MessageCircle } from "lucide-react";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);
+  function handleWhatsAppClick() {
+    trackEvent("click_whatsapp", "conversion", "floating_button");
+  }
 
   useEffect(() => {
     function handleScroll() {
@@ -61,7 +66,8 @@ export function FloatingWhatsApp() {
 
       {/* BUTTON */}
 
-      <div
+      <button
+        onClick={handleWhatsAppClick}
         className="
           flex
           h-16
@@ -82,14 +88,14 @@ export function FloatingWhatsApp() {
           hover:scale-110
         "
       >
-        <MessageCircle
+        <FaWhatsapp
           className="
             h-8
             w-8
             text-white
           "
         />
-      </div>
+      </button>
     </a>
   );
 }

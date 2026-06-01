@@ -55,7 +55,7 @@ export function SectionHeader({
             mt-6
             text-lg
             leading-relaxed
-            text-zinc-400
+            text-zinc-300
           "
         >
           {description}

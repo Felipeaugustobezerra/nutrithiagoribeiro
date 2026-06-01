@@ -8,7 +8,7 @@ export function Footer() {
       className="
         border-t
         border-white/10
-        py-20
+        py-16
       "
     >
       <Container>
@@ -29,7 +29,7 @@ export function Footer() {
           <p
             className="
               mx-auto
-              mt-6
+              mt-4
               max-w-2xl
               leading-relaxed
               text-zinc-400
@@ -45,13 +45,13 @@ export function Footer() {
 
           <div
             className="
-              mt-14
+              mt-10
               border-t
-              border-white/10
-              pt-8
+              border-white/20
+              pt-4
             "
           >
-            <p className="text-sm text-zinc-500">
+            <p className="text-lg font-bold text-zinc-400">
               © {new Date().getFullYear()} Thiago Ribeiro. Todos os direitos
               reservados.
             </p>

@@ -7,7 +7,7 @@ export function HeroDescription() {
         className="
           mt-8
           max-w-2xl
-          text-lg
+          text-xl
           leading-relaxed
           text-zinc-400
         "

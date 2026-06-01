@@ -6,37 +6,8 @@ import { cn } from "@/lib/utils/cn";
 
 import { useActiveSection } from "@/hooks/use-active-section";
 
-const navigationItems = [
-  {
-    label: "Sobre",
-    href: "#about",
-  },
-
-  {
-    label: "Resultados",
-    href: "#results",
-  },
-
-  {
-    label: "Método",
-    href: "#method",
-  },
-
-  {
-    label: "Depoimentos",
-    href: "#testimonials",
-  },
-
-  {
-    label: "FAQ",
-    href: "#faq",
-  },
-
-  {
-    label: "Contato",
-    href: "#contact",
-  },
-];
+import { navigationItems } from "./navigation-items";
+import { MobileMenu } from "./mobile-menu";
 
 export function Navbar() {
   const activeSection = useActiveSection();
@@ -82,7 +53,7 @@ export function Navbar() {
           <span className="text-[#72F5C8]">RIBEIRO</span>
         </Link>
 
-        {/* NAVIGATION */}
+        {/* DESKTOP NAVIGATION */}
 
         <nav
           className="
@@ -104,11 +75,10 @@ export function Navbar() {
                 className={cn(
                   `
                     relative
-                    text-sm
-                    font-medium
+                    text-md
+                    font-semibold
                     transition-colors
                   `,
-
                   isActive
                     ? "text-[#72F5C8]"
                     : "text-zinc-400 hover:text-white",
@@ -135,31 +105,45 @@ export function Navbar() {
           })}
         </nav>
 
-        {/* CTA */}
+        {/* RIGHT SIDE */}
 
-        <a
-          href="https://wa.me/5581996051733?text=Olá%20Thiago,%20gostaria%20de%20saber%20mais%20sobre%20a%20consultoria."
-          target="_blank"
-          rel="noreferrer"
+        <div
           className="
-            hidden
-            rounded-full
-            bg-[#72F5C8]
-            px-5
-            py-3
-
-            text-sm
-            font-semibold
-            text-black
-
-            transition-transform
-            hover:scale-105
-
-            md:inline-flex
+            flex
+            items-center
+            gap-4
           "
         >
-          Consultoria
-        </a>
+          {/* CTA DESKTOP */}
+
+          <a
+            href="https://wa.me/5581996051733?text=Olá%20Thiago,%20gostaria%20de%20saber%20mais%20sobre%20a%20consultoria."
+            target="_blank"
+            rel="noreferrer"
+            className="
+              hidden
+              rounded-full
+              bg-[#72F5C8]
+              px-5
+              py-3
+
+              text-md
+              font-semibold
+              text-black
+
+              transition-transform
+              hover:scale-105
+
+              md:inline-flex
+            "
+          >
+            Consultoria
+          </a>
+
+          {/* MOBILE MENU */}
+
+          <MobileMenu />
+        </div>
       </div>
     </header>
   );

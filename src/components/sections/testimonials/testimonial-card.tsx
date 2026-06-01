@@ -1,10 +1,18 @@
+import Image from "next/image";
+
 interface TestimonialCardProps {
   name: string;
   role: string;
   content: string;
+  image: string;
 }
 
-export function TestimonialCard({ name, role, content }: TestimonialCardProps) {
+export function TestimonialCard({
+  name,
+  role,
+  content,
+  image,
+}: TestimonialCardProps) {
   return (
     <div
       className="
@@ -14,6 +22,11 @@ export function TestimonialCard({ name, role, content }: TestimonialCardProps) {
         bg-white/5
         p-10
         backdrop-blur-xl
+        justify-between
+        flex
+        flex-col
+        items-center
+        text-center 
       "
     >
       <p
@@ -27,6 +40,14 @@ export function TestimonialCard({ name, role, content }: TestimonialCardProps) {
       </p>
 
       <div className="mt-8">
+        <Image
+          src={image}
+          alt={name}
+          width={100}
+          height={100}
+          className="mx-auto h-40 w-40 rounded- object-cover object-top"
+        />
+
         <strong
           className="
             text-lg
@@ -36,7 +57,7 @@ export function TestimonialCard({ name, role, content }: TestimonialCardProps) {
           {name}
         </strong>
 
-        <p className="mt-1 text-zinc-500">{role}</p>
+        <p className="mt-1 text-zinc-300">{role}</p>
       </div>
     </div>
   );
