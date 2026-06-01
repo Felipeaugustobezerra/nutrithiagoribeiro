@@ -3,7 +3,7 @@ name: Deploy Hostinger teste
 on:
   push:
     branches:
-      - main
+      - master
 
   workflow_dispatch:
 
