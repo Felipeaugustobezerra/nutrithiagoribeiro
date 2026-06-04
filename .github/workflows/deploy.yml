@@ -1,9 +1,10 @@
-name: Deploy Hostinger teste
+name: Deploy Hostinger
 
 on:
   push:
     branches:
       - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -35,6 +36,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
           local-dir: ./out/
-          server-dir: /domains/nutrithiagoribeiro.com/public_html/ # Ajuste para onde quer fazer o deploy
-
+          server-dir: /domains/nutrithiagoribeiro.com/public_html/
