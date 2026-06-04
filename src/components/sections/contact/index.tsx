@@ -6,7 +6,7 @@ import { WhatsAppCard } from "./whatsapp-card";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-32 scroll-mt-32">
+    <section id="contact" className="py-20 scroll-mt-32">
       <Container>
         <SectionHeader
           eyebrow="Contato"

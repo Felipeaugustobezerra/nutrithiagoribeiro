@@ -36,7 +36,7 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section id="testimonials" className="py-32 scroll-mt-32">
+    <section id="testimonials" className="py-20 scroll-mt-32">
       <Container>
         <SectionHeader
           eyebrow="Depoimentos"

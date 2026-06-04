@@ -24,7 +24,7 @@ export function FAQSection() {
   }
 
   return (
-    <section id="faq" className="py-32 scroll-mt-32">
+    <section id="faq" className="py-20 scroll-mt-32">
       <Container>
         <SectionHeader
           eyebrow="FAQ"

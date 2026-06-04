@@ -8,7 +8,7 @@ import { results } from "./result-data";
 
 export function ResultsSection() {
   return (
-    <section id="results" className="py-32 scroll-mt-32">
+    <section id="results" className="py-20 scroll-mt-30">
       <Container>
         <SectionHeader
           eyebrow="Resultados"

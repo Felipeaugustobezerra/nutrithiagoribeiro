@@ -23,7 +23,7 @@ export function MethodStep({ number, title, description }: MethodStepProps) {
         className="
           text-6xl
           font-black
-          text-[#72F5C8]/40
+          text-[#72F5C8]/80
         "
       >
         {number}
@@ -31,7 +31,7 @@ export function MethodStep({ number, title, description }: MethodStepProps) {
 
       {/* CONTENT */}
 
-      <div className="mt-6">
+      <div className="mt-4">
         <h3
           className="
             text-2xl

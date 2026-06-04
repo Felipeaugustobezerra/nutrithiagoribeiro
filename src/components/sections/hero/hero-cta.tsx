@@ -36,7 +36,7 @@ export function HeroCTA() {
           <Button onClick={handleHeroCTA}>CONSULTORIA</Button>
         </a>
         <a href="#results">
-          <Button variant="secondary">VER RESULTADOS</Button>
+          <Button variant="secondary">RESULTADOS</Button>
         </a>
       </div>
     </FadeIn>

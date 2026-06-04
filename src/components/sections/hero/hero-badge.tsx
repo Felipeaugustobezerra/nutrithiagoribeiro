@@ -5,9 +5,13 @@ export function HeroBadge() {
     <FadeIn>
       <span
         className="
-          mb-6
-          inline-flex
+          mx-auto
+          lg:mx-0 
+          mb-10
+          flex
+          w-fit
           items-center
+          justify-center
           gap-2
           rounded-full
           border
