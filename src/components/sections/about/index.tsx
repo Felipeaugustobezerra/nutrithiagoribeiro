@@ -11,12 +11,19 @@ export function AboutSection() {
     <section id="about" className="py-32 scroll-mt-32">
       <Container>
         <SectionHeader
-          eyebrow="Sobre"
-          title="Consultoria focada em resultado real."
+          eyebrow="Sobre Thiago Ribeiro"
+          title="Mais de 7 anos transformando vidas através da nutrição e performance."
           description="
-            Estratégia, acompanhamento e metodologia
-            para transformar seu físico e performance.
-          "
+
+    Nutricionista e Coachbuilding especializado em alta performance,
+
+    hipertrofia e emagrecimento. Cada protocolo é desenvolvido
+
+    de forma personalizada, considerando rotina, objetivos e
+
+    necessidades individuais para garantir resultados reais e duradouros.
+
+  "
         />
 
         <div

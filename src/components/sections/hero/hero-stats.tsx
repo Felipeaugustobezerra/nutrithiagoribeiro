@@ -2,11 +2,11 @@ import { FadeIn } from "@/components/shared/fade-in";
 
 const stats = [
   {
-    value: "+10",
+    value: "+ 800",
     label: "Alunos transformados",
   },
   {
-    value: "+5",
+    value: "+ 7",
     label: "Anos de experiência",
   },
   {
@@ -41,7 +41,7 @@ export function HeroStats() {
               className="
                 mt-2
                 text-sm
-                text-zinc-500
+                text-zinc-400
               "
             >
               {stat.label}

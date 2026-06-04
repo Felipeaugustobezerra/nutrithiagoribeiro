@@ -14,4 +14,18 @@ export const faqItems = [
     question: "Quanto tempo demora para ver resultados?",
     answer: "Os resultados dependem da consistência e objetivo de cada aluno.",
   },
+  {
+    question: "Como é no monitoramento dos meus resultados?",
+    answer:
+      "Através de avaliações físicas periódicas e através dos feedbacks quinzenais.",
+  },
+  {
+    question: "Qual o publico alvo?",
+    answer: "Atletas (fisiculturismo, artes marciais, futebol e etc).",
+  },
+  {
+    question: "Os exames bioquímicos são importantes?",
+    answer:
+      "Sim, os exames laboratoriais são essenciais. Eles fornecem informações valiosas para prevenção, diagnóstico precoces e monitoramento de doenças.",
+  },
 ];

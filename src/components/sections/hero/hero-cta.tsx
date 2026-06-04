@@ -19,16 +19,19 @@ export function HeroCTA() {
       <div
         className="
           mt-10
-          flex
-          flex-col
-          gap-4
-          sm:flex-row
+
+      grid
+
+      grid-cols-2
+
+      max-w-[500px]
         "
       >
         <a
           href="https://wa.me/5581996051733?text=Olá%20Thiago,%20gostaria%20de%20saber%20mais%20sobre%20a%20consultoria."
           target="_blank"
           rel="noreferrer"
+          className="w-full"
         >
           <Button onClick={handleHeroCTA}>CONSULTORIA</Button>
         </a>

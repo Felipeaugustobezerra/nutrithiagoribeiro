@@ -8,16 +8,26 @@ export function HeroImage() {
       <div
         className="
           relative
-          hidden
-          lg:block
+
+          mx-auto
+
+          mt-10
+
+          max-w-[320px]
+
+          lg:mt-0
+          lg:max-w-none
         "
       >
         <div
           className="
             absolute
             inset-0
+
             rounded-[40px]
+
             bg-[#72F5C8]/20
+
             blur-3xl
           "
         />
@@ -25,11 +35,16 @@ export function HeroImage() {
         <div
           className="
             relative
+
             overflow-hidden
+
             rounded-[40px]
+
             border
             border-white/10
+
             bg-white/5
+
             backdrop-blur-xl
           "
         >
@@ -38,9 +53,11 @@ export function HeroImage() {
             alt="Thiago Ribeiro"
             width={700}
             height={900}
+            sizes="(max-width: 1024px) 320px, 700px"
             className="
               h-auto
               w-full
+
               object-cover
             "
             priority

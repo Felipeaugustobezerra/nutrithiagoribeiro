@@ -1,16 +1,22 @@
 export const aboutItems = [
   {
-    title: "Estratégia Personalizada",
-    description: "Planejamento individual focado no seu objetivo.",
+    title: "Consultoria Personalizada",
+
+    description:
+      "Planejamento adaptado à sua rotina, objetivos e necessidades individuais.",
   },
 
   {
-    title: "Acompanhamento Próximo",
-    description: "Suporte contínuo para evolução constante.",
+    title: "Acompanhamento Contínuo",
+
+    description:
+      "Suporte próximo e ajustes estratégicos para maximizar seus resultados.",
   },
 
   {
-    title: "Alta Performance",
-    description: "Métodos voltados para performance e resultado real.",
+    title: "Metodologia Comprovada",
+
+    description:
+      "Estratégias baseadas em ciência, experiência prática e resultados reais.",
   },
 ];

@@ -26,7 +26,7 @@ export function ResultCard({ name, goal, image }: ResultCardProps) {
           alt={name}
           fill
           className="
-            object-cover
+            object-fill
             transition-transform
             duration-700
             group-hover:scale-105

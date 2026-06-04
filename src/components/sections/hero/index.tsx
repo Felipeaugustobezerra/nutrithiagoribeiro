@@ -16,7 +16,7 @@ export function HeroSection() {
         min-h-screen
         items-center
         overflow-hidden
-        pt-32 
+        pt-32
         scroll-mt-32
       "
     >
@@ -25,12 +25,17 @@ export function HeroSection() {
           absolute
           left-1/2
           top-1/2
+
           h-[500px]
           w-[500px]
+
           -translate-x-1/2
           -translate-y-1/2
+
           rounded-full
+
           bg-[#72F5C8]/20
+
           blur-3xl
         "
       />
@@ -39,7 +44,9 @@ export function HeroSection() {
         className="
           absolute
           inset-0
+
           bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)]
+
           bg-[size:80px_80px]
         "
       />
@@ -49,9 +56,13 @@ export function HeroSection() {
           className="
             relative
             z-10
+
             grid
+
             items-center
+
             gap-20
+
             lg:grid-cols-2
           "
         >
@@ -64,10 +75,20 @@ export function HeroSection() {
 
             <HeroCTA />
 
+            {/* MOBILE IMAGE */}
+
+            <div className="lg:hidden">
+              <HeroImage />
+            </div>
+
             <HeroStats />
           </div>
 
-          <HeroImage />
+          {/* DESKTOP IMAGE */}
+
+          <div className="hidden lg:block">
+            <HeroImage />
+          </div>
         </div>
       </Container>
     </section>

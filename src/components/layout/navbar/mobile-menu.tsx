@@ -60,7 +60,8 @@ export function MobileMenu() {
               top-20
 
               z-[60]
-
+              items-center
+              text-center
               flex
               flex-col
               gap-6
@@ -71,6 +72,8 @@ export function MobileMenu() {
               bg-black
 
               p-6
+              
+  
             "
           >
             {navigationItems.map((item) => (
@@ -82,7 +85,7 @@ export function MobileMenu() {
                     text-lg
                     text-white
                     transition-colors
-
+                    
                     hover:text-[#72F5C8]
                   "
               >
