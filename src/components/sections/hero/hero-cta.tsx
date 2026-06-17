@@ -1,7 +1,6 @@
 "use client";
 import { FadeIn } from "@/components/shared/fade-in";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
 
 export function HeroCTA() {
@@ -24,7 +23,7 @@ export function HeroCTA() {
 
       grid-cols-2
 
-      max-w-[500px]
+      max-w-125
         "
       >
         <a
@@ -32,10 +31,11 @@ export function HeroCTA() {
           target="_blank"
           rel="noreferrer"
           className="w-full"
+          aria-label="Solicitar consultoria personalizada"
         >
           <Button onClick={handleHeroCTA}>CONSULTORIA</Button>
         </a>
-        <a href="#results">
+        <a href="#results" aria-label="Ver resultados">
           <Button variant="secondary">RESULTADOS</Button>
         </a>
       </div>

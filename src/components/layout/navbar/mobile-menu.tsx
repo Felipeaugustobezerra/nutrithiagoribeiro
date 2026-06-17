@@ -59,7 +59,7 @@ export function MobileMenu() {
               right-0
               top-20
 
-              z-[60]
+              z-60
               items-center
               text-center
               flex

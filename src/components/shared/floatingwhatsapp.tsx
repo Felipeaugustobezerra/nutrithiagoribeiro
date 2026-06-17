@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import { trackEvent } from "@/lib/analytics";
 
-import { MessageCircle } from "lucide-react";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);
