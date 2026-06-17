@@ -20,7 +20,7 @@ export function Navbar() {
         left-0
         right-0
         z-50
-
+        
         border-b
         border-white/10
 
@@ -61,6 +61,8 @@ export function Navbar() {
             items-center
             gap-8
             md:flex
+          
+          
           "
         >
           {navigationItems.map((item) => {

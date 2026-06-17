@@ -49,7 +49,7 @@ export function HeroImage() {
           "
         >
           <Image
-            src="/image2.png"
+            src="/image/image2.webp"
             alt="Thiago Ribeiro"
             width={700}
             height={900}

@@ -13,7 +13,7 @@ export function AboutSection() {
         <SectionHeader
           eyebrow="Sobre Thiago Ribeiro"
           title="Mais de 7 anos transformando vidas através da nutrição e performance."
-          description="Nutricionista e Coachbuilding especializado em alta performance,
+          description="Nutricionista e Coach Bodybuilding especializado em alta performance,
           hipertrofia e emagrecimento. Cada protocolo é desenvolvido
           de forma personalizada, considerando rotina, objetivos e
           necessidades individuais para garantir resultados reais e duradouros."
