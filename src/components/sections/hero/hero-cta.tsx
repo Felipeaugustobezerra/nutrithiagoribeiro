@@ -4,15 +4,6 @@ import { Button } from "@/components/ui/button";
 import { trackEvent } from "@/lib/analytics";
 
 export function HeroCTA() {
-  function handleHeroCTA() {
-    trackEvent(
-      "hero_cta",
-
-      "conversion",
-
-      "consultoria",
-    );
-  }
   return (
     <FadeIn delay={0.6}>
       <div
@@ -32,10 +23,15 @@ export function HeroCTA() {
           rel="noreferrer"
           className="w-full"
           aria-label="Solicitar consultoria personalizada"
+          onClick={() => trackEvent("click_consultoria")}
         >
-          <Button onClick={handleHeroCTA}>CONSULTORIA</Button>
+          <Button>CONSULTORIA</Button>
         </a>
-        <a href="#results" aria-label="Ver resultados">
+        <a
+          href="#results"
+          onClick={() => trackEvent("click_resultados")}
+          aria-label="Ver resultados"
+        >
           <Button variant="secondary">RESULTADOS</Button>
         </a>
       </div>

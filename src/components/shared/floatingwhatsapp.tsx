@@ -7,9 +7,6 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);
-  function handleWhatsAppClick() {
-    trackEvent("click_whatsapp", "conversion", "floating_button");
-  }
 
   useEffect(() => {
     function handleScroll() {
@@ -66,7 +63,7 @@ export function FloatingWhatsApp() {
       {/* BUTTON */}
 
       <button
-        onClick={handleWhatsAppClick}
+        onClick={() => trackEvent("click_consultoria_floating_button")}
         className="
           flex
           h-16
