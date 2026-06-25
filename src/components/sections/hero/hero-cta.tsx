@@ -23,19 +23,7 @@ export function HeroCTA() {
           rel="noreferrer"
           className="w-full"
           aria-label="Solicitar consultoria personalizada"
-          onClick={(e) => {
-            e.preventDefault();
-
-            trackEvent("click_consultoria");
-
-            setTimeout(() => {
-              window.open(
-                "https://wa.me/5581996051733?text=Olá%20Thiago...",
-
-                "_blank",
-              );
-            }, 500);
-          }}
+          onClick={() => trackEvent("click_consultoria")}
         >
           <Button>CONSULTORIA</Button>
         </a>
