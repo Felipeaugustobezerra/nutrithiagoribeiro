@@ -1,11 +1,18 @@
 declare global {
   interface Window {
-    gtag?: (...args: unknown[]) => void;
+    dataLayer: Record<string, unknown>[];
   }
 }
 
-export const trackEvent = (event: string) => {
-  console.log("sending", event);
+export const trackEvent = (event: string, data?: Record<string, unknown>) => {
+  const payload = {
+    event,
+    ...data,
+  };
 
-  window.gtag?.("event", event);
+  console.log("Payload:", payload);
+
+  window.dataLayer.push(payload);
+
+  console.log("Último item:", window.dataLayer.at(-1));
 };
