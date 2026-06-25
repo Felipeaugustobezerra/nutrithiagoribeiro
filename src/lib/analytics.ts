@@ -5,5 +5,6 @@ declare global {
 }
 
 export const trackEvent = (event: string, data?: Record<string, unknown>) => {
+  console.log("TRACK EVENT:", event);
   window.gtag?.("event", event, data);
 };
